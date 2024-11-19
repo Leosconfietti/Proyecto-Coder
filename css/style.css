@@ -1,0 +1,494 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!----HEADER----*/
+header {
+    background-color: darkolivegreen;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header nav ul li a:hover{
+    color: white;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*!----MAIN----*/
+
+main{
+    background-color: beige;
+}
+
+
+
+.Hero {
+    height: 600px;
+    text-align: center;
+    background-image: url("../img/Hero\ Section.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Hero h2{
+    font-size: 80px;
+}
+
+
+.Quienes-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: beige;
+    /*border: 2px solid black;*/
+}
+
+.Quienes-somos div {
+    width: 50%;
+
+}
+
+.Quienes-somos div h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.Quienes-somos div p {
+    font-size: 35px;
+    text-align: center;
+}
+
+.Quienes-somos img {
+    width: 800px;
+    height: 700px;
+}
+
+
+.Glamping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*border: 2px solid black;*/
+}
+
+.Glamping div{
+    width: 50%;
+    text-align: center;
+
+}
+
+.Glamping div h2 {
+    font-size: 45px;
+}
+
+.Glamping div p {
+    font-size: 30px;
+}
+
+.Glamping img {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+
+
+.Glamping div a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-size: 25px;
+}
+
+.Glamping div a:hover{
+    color: rgb(47, 236, 47);
+}
+
+.SPA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*border: 2px solid black;*/
+}
+
+.SPA div {
+    width: 50%;
+    text-align: center;
+
+}
+
+.SPA div h2 {
+    font-size: 45px;
+}
+
+.SPA div p {
+    font-size: 30px;
+}
+
+.SPA img {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+
+.SPA div a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-size: 25px;
+}
+
+.SPA div a:hover{
+    color: rgb(47, 236, 47);
+}
+
+.Galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /*border: 2px solid black;*/
+}
+
+.Galeria h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.Galeria a {
+    font-size: 25px;
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+.Galeria a:hover{
+    color: rgb(47, 236, 47);
+}
+
+
+.fixed {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+.fixed img {
+    width: 60px;
+}
+
+
+/*!----FOOTER----*/
+footer {
+    background-color: darkolivegreen;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 50px;
+    color: black;
+}
+
+footer div a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 50px 10px 50px;
+}
+
+
+
+/*!----PAGINA DE GALERIA----*/
+
+.Titulo-Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.Grid-Galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.Grid-Galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-4 {
+    grid-row: span 2;
+
+}
+
+.img-5 {
+    grid-row: span 2;
+}
+
+.img-9 {
+    grid-column: span 2;
+}
+
+.img-10 {
+    grid-column: span 2;
+}
+
+
+/*!--PAGINA DE CONTACTO--*/
+
+
+main form{
+    padding: 30px;
+    width: 50%;
+}
+
+
+
+
+/*!--MEDIA QUERIES--*/
+
+
+@media screen and (max-width:1250px) {
+    .Grid-Galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .img-8{
+        grid-row: span 2;
+    }
+    .img-12{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .Titulo-Galeria {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .Quienes-somos p {
+        width: 100%;
+    }
+
+    .Quienes-somos img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .Glamping {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .SPA {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .Grid-Galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img-4, .img-5, .img-9, .img-10, .img-8, .img-12 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width:910px) {
+    header nav ul li {
+        margin: 10px
+    }
+}
+
+@media screen and (max-width:910px) {
+    .Hero h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Titulo-Galeria h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .Grid-Galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:550px) {
+    .Titulo-Galeria h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:515px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    footer div a img {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:482px) {
+    .Hero h2 {
+        font-size: 33px;
+    }
+}
+
+
+@media screen and (max-width:482px) {
+    .Quienes-somos div h2 {
+        font-size: 33px;
+    }
+
+    .Quienes-somos div p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:482px) {
+    .Glamping div h2 {
+        font-size: 33px;
+    }
+
+    .Glamping div p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:482px) {
+    .SPA div h2 {
+        font-size: 33px;
+    }
+
+    .SPA div p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:482px) {
+    .Galeria {
+        font-size: 33px;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    header h1 {
+        font-size: 33px;
+    }
+
+    header nav ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .Hero h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .Glamping img {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .SPA img {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .Galeria {
+        font-size: 25px;
+    }
+}
