@@ -292,8 +292,12 @@ main form{
     width: 50%;
 }
 
-
-
+.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 
 /*!--MEDIA QUERIES--*/
 
@@ -382,7 +386,6 @@ main form{
     }
 }
 
-
 @media screen and (max-width:550px) {
     .Grid-Galeria {
         grid-template-columns: repeat(1, 1fr);
@@ -408,6 +411,12 @@ main form{
 @media screen and (max-width:510px) {
     footer div a img {
         margin: 15px;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .mapa {
+        width: 440px;
     }
 }
 
@@ -451,6 +460,12 @@ main form{
 @media screen and (max-width:482px) {
     .Galeria {
         font-size: 33px;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .mapa {
+        width: 355px;
     }
 }
 
